@@ -144,7 +144,7 @@
   },
 
   "krakenMarkets": {
-    "XRP": [
+    "ADA": [
         {
           "asset": "XRPAUD",
           "lastPrice": 1.55,
@@ -201,7 +201,7 @@
         }
       ],
   
-      "BCH": [
+      "ETH": [
         {
           "asset": "BCHAUD",
           "lastPrice": 929.99,

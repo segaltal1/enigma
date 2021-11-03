@@ -1,20 +1,25 @@
 const initialState = {
     markets: [],
-    market: null,
+    watchlist: [],
+    filterBy: ''
 }
 export function marketReducer(state = initialState, action) {
     var newState = state;
-    var markets;
+    var watchlist;
     switch (action.type) {
-        case 'FILTER_MARKET':
-            newState = { ...state, market: action.market }
+        case 'SET_FILTER':
+            newState = { ...state, filterBy: action.filterBy }
             break;
         case 'SET_MARKETS':
             newState = { ...state, markets: action.markets }
             break;
-        case 'SET_MARKET':
-            markets = state.markets.map(market => market._id !== action.market._id ? market : action.market)
-            newState = { ...state, markets, market: action.market }
+        case 'UPDATE_WATCHLIST':
+            const { asset } = action
+            if (state.watchlist.includes(asset))
+                console.log("🚀 ~ marketReducer ~ asset", asset)
+            // watchlist = state.watchlist.map(market => market._id !== action.market._id ? market : action.market)
+            // if(watchlist.includes())
+            newState = { ...state, watchlist }
             break;
         default:
     }

@@ -8,7 +8,7 @@ export const AppHeader = memo(function _AppHeader() {
             path: '/', title: 'BTC markets'
         },
         {
-            path: '/kraken', title: 'Kranken markets'
+            path: '/kraken', title: 'Kraken markets'
         },
         {
             path: '/Watchlist', title: 'Watchlist'
