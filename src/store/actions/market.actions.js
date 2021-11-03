@@ -1,14 +1,15 @@
-import { marketService } from './../../services/market.service';
+import { btcService } from '../../services/btc.service';
+import { marketService } from '../../services/kraken.service';
 
-export function loadMarkets(filterBy = null) {
+export function loadMarkets(market, filterBy = null) {
     return async dispatch => {
+
         try {
-            const markets = await marketService.getMarkets(filterBy);
-            if (!markets.length) {
-                // -----------------NOT WORKING WITH FILTER!---------------
-                // const market = await marketService.add()
-                // markets.push(market);
-            }
+            let markets = (market === 'kraken') ?
+                await marketService.getKrakenMarket(filterBy)
+                :
+                await btcService.getBtcMarket(filterBy)
+
             dispatch({ type: 'SET_MARKETS', markets })
         } catch (err) {
             console.log('marketActions: err in loadMarkets', err)

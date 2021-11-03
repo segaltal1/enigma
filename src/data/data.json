@@ -148,7 +148,7 @@
         {
           "asset": "XRPAUD",
           "lastPrice": 1.55,
-          "change": -0.57,
+          "change": 0.57,
           "volume": "121.8K"
         },
         {
@@ -190,13 +190,13 @@
         {
           "asset": "XRPUSD",
           "lastPrice": 1.13,
-          "change": -0.36,
+          "change": 0.36,
           "volume": "4.333M"
         },
         {
           "asset": "XRPUSDT",
           "lastPrice": 1.13,
-          "change": -0.35,
+          "change": 0.35,
           "volume": "825.7K"
         }
       ],

@@ -1,1 +1,28 @@
-// 
+.market-info {
+    &.marked {
+        background: #ffd7000f;
+    }
+    & > * {
+        flex-basis: 22%;
+        text-align: end;
+    }
+    span {
+        &.red {
+            color: red;
+        }
+        &.green {
+            color: green;
+        }
+    }
+    // .volume {
+    // }
+    .asset {
+        text-align: inherit;
+    }
+    .star {
+        font-size: 1.1rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

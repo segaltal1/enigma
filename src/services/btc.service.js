@@ -5,6 +5,6 @@ async function getBtcMarket() {
     return btcMarkets;
 }
 
-export const actionService = {
+export const btcService = {
     getBtcMarket
 }

@@ -1,15 +1,14 @@
 import { memo } from 'react';
-import { MarketPreview } from './MarketPreview';
+import { MarketInfo } from './MarketInfo';
 
-export const MarketList = memo(function _MarketList({ markets, selectedMarket, onSelectMarket }) {
+export const MarketList = memo(function _MarketList({ markets, title }) {
     return (
-        <section className="market-list flex column">
-            {markets.length ? markets.map(market => <MarketPreview
-                key={market.id}
+        <section className="market-list flex column gap">
+            <h2 className="title">{title}</h2>
+            {markets.length && markets.map(market => <MarketInfo
+                key={market.asset}
                 market={market}
-                selectedMarket={selectedMarket}
-                onSelectMarket={onSelectMarket} />)
-                : <h1>No markets found!</h1>}
+            />)}
         </section>
     )
 })

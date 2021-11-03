@@ -1,16 +1,28 @@
-import arrow from '../../assets/img/arrow-right.svg'
-import active from '../../assets/img/active.svg'
+import { useMemo, useState } from "react";
 
-export function MarketPreview({ market, selectedMarket, onSelectMarket }) {
-    const isActive = market.id === selectedMarket?.id;
+
+export const MarketInfo = ({ market }) => {
+    const { asset, lastPrice, change, volume } = market
+    const [isStar, setStar] = useState(false)
+
+    const toggleStar = () => {
+        setStar((prevState) => !prevState)
+    }
+    const changeClass = useMemo(() => {
+        return change > 0 ? 'green' : 'red'
+    }, [change]);
+
     return (
-        <section className={`market-preview flex align-center space-between ${isActive ? 'active' : ''}`}
-            onClick={() => onSelectMarket(market)}>
-            <div className="market-title align-center flex">
-                <img src={active} alt="active" />
-                <span>{market.name}</span>
-            </div>
-            <img src={arrow} alt="arrow" />
-        </section>
+        <section className={`market-info flex align-center  ${isStar ? 'marked' : ''}`}>
+            <span className="asset">{asset}</span>
+            <span>{lastPrice}</span>
+            <span className={changeClass}>{change + '%'}</span>
+            <span className="volume">{volume}</span>
+            {isStar ?
+                < span onClick={toggleStar} className="star">⭐</span>
+                : <span onClick={toggleStar} className="star">☆</span>
+            }
+
+        </section >
     )
 }

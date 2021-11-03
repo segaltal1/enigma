@@ -7,13 +7,14 @@ const routes = [
         component: AppBoard,
     },
     {
-        path: '/kraken',
-        component: AppBoard,
-    },
-    {
         path: '/watchlist',
         component: WatchList,
-    }
+    },
+    {
+        path: '/:kraken',
+        component: AppBoard,
+    },
+
 ]
 
 export default routes;
