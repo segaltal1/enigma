@@ -1,0 +1,289 @@
+{
+
+  "btcMarkets": {
+    "XRP": [
+      {
+        "asset": "XRPAUD",
+        "lastPrice": 1.55,
+        "change": -0.57,
+        "volume": "121.8K"
+      },
+      {
+        "asset": "XRPBTC",
+        "lastPrice": 0.00002354,
+        "change": 0.43,
+        "volume": "824.6K"
+      },
+      {
+        "asset": "XRPCAD",
+        "lastPrice": 1.43,
+        "change": -0.35,
+        "volume": "222.3K"
+      },
+      {
+        "asset": "XRPETH",
+        "lastPrice": 0.0003566,
+        "change": 0.39,
+        "volume": "230.8K"
+      },
+      {
+        "asset": "XRPEUR",
+        "lastPrice": 0.956,
+        "change": -0.35,
+        "volume": "6.450M"
+      },
+      {
+        "asset": "XRPGBP",
+        "lastPrice": 0.8176,
+        "change": -0.65,
+        "volume": "976.1K"
+      },
+      {
+        "asset": "XRPJPY",
+        "lastPrice": 124.02,
+        "change": -0.76,
+        "volume": "26.32K"
+      },
+      {
+        "asset": "XRPUSD",
+        "lastPrice": 1.13,
+        "change": -0.36,
+        "volume": "4.333M"
+      },
+      {
+        "asset": "XRPUSDT",
+        "lastPrice": 1.13,
+        "change": -0.35,
+        "volume": "825.7K"
+      }
+    ],
+
+    "BCH": [
+      {
+        "asset": "BCHAUD",
+        "lastPrice": 929.99,
+        "change": -0.05,
+        "volume": "7.58"
+      },
+      {
+        "asset": "BCHBTC",
+        "lastPrice": 0.01347,
+        "change": -3.37,
+        "volume": "155.61"
+      },
+      {
+        "asset": "BCHETH",
+        "lastPrice": 0.204,
+        "change": -3.32,
+        "volume": "64.78"
+      },
+      {
+        "asset": "BCHEUR",
+        "lastPrice": 548.56,
+        "change": -4.06,
+        "volume": "1.227k"
+      },
+      {
+        "asset": "BCHGBP",
+        "lastPrice": 466.7,
+        "change": -4.82,
+        "volume": "9.65"
+      },
+      {
+        "asset": "BCHJPY",
+        "lastPrice": 707759.0,
+        "change": -5.0,
+        "volume": "20.61"
+      },
+      {
+        "asset": "BCHUSD",
+        "lastPrice": 646.66,
+        "change": -4.0,
+        "volume": "2.216K"
+      },
+      {
+        "asset": "BCHUSDT",
+        "lastPrice": 646.7,
+        "change": -4.33,
+        "volume": "150.12"
+      }
+    ],
+
+    "LTC": [
+      {
+        "asset": "LTCAUD",
+        "lastPrice": 238.88,
+        "change": -3.63,
+        "volume": "61.66"
+      },
+      {
+        "asset": "LTCBTC",
+        "lastPrice": 0.003587,
+        "change": -2.45,
+        "volume": "2.587K"
+      },
+      {
+        "asset": "LTCETH",
+        "lastPrice": 0.05441,
+        "change": -2.42,
+        "volume": "590.38"
+      },
+      {
+        "asset": "LTCEUR",
+        "lastPrice": 145.99,
+        "change": -3.0,
+        "volume": "9.364K"
+      },
+      {
+        "asset": "LTCGPB",
+        "lastPrice": 124.91,
+        "change": -3.05,
+        "volume": "261.35"
+      }
+    ]
+  },
+
+  "krakenMarkets": {
+    "XRP": [
+        {
+          "asset": "XRPAUD",
+          "lastPrice": 1.55,
+          "change": -0.57,
+          "volume": "121.8K"
+        },
+        {
+          "asset": "XRPBTC",
+          "lastPrice": 0.00002354,
+          "change": 0.43,
+          "volume": "824.6K"
+        },
+        {
+          "asset": "XRPCAD",
+          "lastPrice": 1.43,
+          "change": -0.35,
+          "volume": "222.3K"
+        },
+        {
+          "asset": "XRPETH",
+          "lastPrice": 0.0003566,
+          "change": 0.39,
+          "volume": "230.8K"
+        },
+        {
+          "asset": "XRPEUR",
+          "lastPrice": 0.956,
+          "change": -0.35,
+          "volume": "6.450M"
+        },
+        {
+          "asset": "XRPGBP",
+          "lastPrice": 0.8176,
+          "change": -0.65,
+          "volume": "976.1K"
+        },
+        {
+          "asset": "XRPJPY",
+          "lastPrice": 124.02,
+          "change": -0.76,
+          "volume": "26.32K"
+        },
+        {
+          "asset": "XRPUSD",
+          "lastPrice": 1.13,
+          "change": -0.36,
+          "volume": "4.333M"
+        },
+        {
+          "asset": "XRPUSDT",
+          "lastPrice": 1.13,
+          "change": -0.35,
+          "volume": "825.7K"
+        }
+      ],
+  
+      "BCH": [
+        {
+          "asset": "BCHAUD",
+          "lastPrice": 929.99,
+          "change": -0.05,
+          "volume": "7.58"
+        },
+        {
+          "asset": "BCHBTC",
+          "lastPrice": 0.01347,
+          "change": -3.37,
+          "volume": "155.61"
+        },
+        {
+          "asset": "BCHETH",
+          "lastPrice": 0.204,
+          "change": -3.32,
+          "volume": "64.78"
+        },
+        {
+          "asset": "BCHEUR",
+          "lastPrice": 548.56,
+          "change": -4.06,
+          "volume": "1.227k"
+        },
+        {
+          "asset": "BCHGBP",
+          "lastPrice": 466.7,
+          "change": -4.82,
+          "volume": "9.65"
+        },
+        {
+          "asset": "BCHJPY",
+          "lastPrice": 707759.0,
+          "change": -5.0,
+          "volume": "20.61"
+        },
+        {
+          "asset": "BCHUSD",
+          "lastPrice": 646.66,
+          "change": -4.0,
+          "volume": "2.216K"
+        },
+        {
+          "asset": "BCHUSDT",
+          "lastPrice": 646.7,
+          "change": -4.33,
+          "volume": "150.12"
+        }
+      ],
+  
+      "LTC": [
+        {
+          "asset": "LTCAUD",
+          "lastPrice": 238.88,
+          "change": -3.63,
+          "volume": "61.66"
+        },
+        {
+          "asset": "LTCBTC",
+          "lastPrice": 0.003587,
+          "change": -2.45,
+          "volume": "2.587K"
+        },
+        {
+          "asset": "LTCETH",
+          "lastPrice": 0.05441,
+          "change": -2.42,
+          "volume": "590.38"
+        },
+        {
+          "asset": "LTCEUR",
+          "lastPrice": 145.99,
+          "change": -3.0,
+          "volume": "9.364K"
+        },
+        {
+          "asset": "LTCGPB",
+          "lastPrice": 124.91,
+          "change": -3.05,
+          "volume": "261.35"
+        }
+      ]
+  }
+
+}
