@@ -3,7 +3,6 @@ import { marketService } from '../../services/kraken.service';
 
 export function loadMarkets(market, filterBy = null) {
     return async dispatch => {
-
         try {
             let markets = (market === 'kraken') ?
                 await marketService.getKrakenMarket(filterBy)
@@ -17,13 +16,11 @@ export function loadMarkets(market, filterBy = null) {
     }
 }
 export function updateWatchList(asset) {
-    console.log("🚀 ~ updateWatchList ~ asset", asset)
     return async dispatch => {
-
         try {
             dispatch({ type: 'UPDATE_WATCHLIST', asset })
         } catch (err) {
-            console.log('marketActions: err in loadMarkets', err)
+            console.log('marketActions: err in update', err)
         }
     }
 }
@@ -33,7 +30,7 @@ export function setFilter(filterBy) {
         try {
             dispatch({ type: 'SET_FILTER', filterBy })
         } catch (err) {
-            console.log('marketActions: err in loadMarkets', err)
+            console.log('Cannot set filter', err)
         }
     }
 }

@@ -1,19 +1,13 @@
 import { useEffect, useMemo } from "react"
-import { useDispatch } from "react-redux"
-import { useSelector } from "react-redux"
-import { loadMarkets } from "../store/actions/market.actions"
+import { useSelector, useDispatch } from "react-redux"
 import { AppFilter } from "./FilterApp"
 import { MarketList } from "./market-cmps/MarketList"
+import { loadMarkets } from "../store/actions/market.actions"
 
 export const AppBoard = ({ match }) => {
     const { markets, filterBy } = useSelector(state => state.marketModule)
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        const { params } = match
-        if (params.kraken) dispatch(loadMarkets(params.kraken))
-        else if (match.path === '/') dispatch(loadMarkets('btc'))
-    }, [match])
 
     const marketsToDisaply = useMemo(() => {
         if (!filterBy) return markets
@@ -24,6 +18,13 @@ export const AppBoard = ({ match }) => {
         }, {})
 
     }, [filterBy, markets])
+
+    useEffect(() => {
+        const { params } = match
+        if (params.kraken) dispatch(loadMarkets(params.kraken))
+        else if (match.path === '/') dispatch(loadMarkets('btc'))
+    }, [match])
+
     return (
         <section className="app-board flex column gap">
             <AppFilter />

@@ -1,21 +1,23 @@
-import { Button, IconButton, TextField } from '@material-ui/core'
-import { RemoveCircleOutline } from '@material-ui/icons'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { setFilter } from '../store/actions/market.actions'
+import { Clear } from '@material-ui/icons'
+import { IconButton, TextField } from '@material-ui/core'
 
 export const AppFilter = () => {
     const dispatch = useDispatch()
+    const { filterBy } = useSelector(state => state.marketModule)
 
     const onSetFilter = ({ target }) => {
-        dispatch(setFilter(target.value))
+        dispatch(setFilter(target?.value || ''))
     }
 
     return (
         <section className="app-filter flex align-center">
             <TextField
                 id="field-basic"
-                label="Seacrh"
+                label="Search"
                 variant="outlined"
+                value={filterBy}
                 style={{
                     backgroundColor: "navy",
                     color: "white",
@@ -24,10 +26,19 @@ export const AppFilter = () => {
                 }}
                 onChange={onSetFilter}
             />
-            <IconButton aria-label="delete">
-                <RemoveCircleOutline />
+            <IconButton
+                className="icon-clear"
+                onClick={onSetFilter}
+                style={{
+                    color: '#ffffff',
+                    borderRadius: '0px',
+                    padding: '8px'
+                }}
+                aria-label="clear search"
+                component="span"
+            >
+                <Clear />
             </IconButton>
-
         </section>
     )
 }
